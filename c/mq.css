@@ -1,0 +1,28 @@
+/* line 3, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+header, section, aside, footer {
+  background-color: #ddd;
+  margin: 1em 5%;
+  padding: 1em 5%;
+  width: 80%;
+  float: left; }
+
+@media (min-width: 40em) {
+  /* line 14, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+  section, aside {
+    width: 30%; }
+
+  /* line 17, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+  aside {
+    float: right; } }
+@media (min-width: 60em) {
+  /* line 25, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+  section {
+    width: 45%; }
+
+  /* line 28, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+  aside {
+    width: 15%; }
+
+  /* line 31, /Users/ben/Dropbox/WORK/Control/myMedia/scss/_styles.scss */
+  aside {
+    float: right; } }

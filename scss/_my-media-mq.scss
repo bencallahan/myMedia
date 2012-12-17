@@ -1,0 +1,9 @@
+@mixin my-base {
+  @content;
+}
+
+@mixin my-media($theQuery, $serveToOldIE: true) {
+  @media #{$theQuery} {
+    @content;
+  }
+}

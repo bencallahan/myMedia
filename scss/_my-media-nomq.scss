@@ -1,0 +1,11 @@
+@mixin my-base {
+  @if false {     // never serve the base styles to old IE
+    @content;     // it will already receive this in mq.css
+  }
+}
+
+@mixin my-media($theQuery, $serveToOldIE: true) {
+  @if $serveToOldIE {   // allows us to exclude queries rom old IE
+    @content;           // by passing "false"
+  }
+}

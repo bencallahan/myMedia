@@ -1,0 +1,34 @@
+// all styles not in media queries are served through "my-base"
+@include my-base {
+  header, section, aside, footer {
+    background-color: #ddd;
+    margin: 1em 5%;
+    padding: 1em 5%;
+    width: 80%;
+    float: left;
+  }
+}
+
+// all media query styles are served through "my-media"
+@include my-media("(min-width: 40em)") {
+  section, aside {
+    width: 30%;
+  }
+  aside {
+    float: right;
+  }
+}
+
+
+// the "false" parameter hides these styles from old IE
+@include my-media("(min-width: 60em)", false) {
+  section {
+    width: 45%;
+  }
+  aside {
+    width: 15%;
+  }
+  aside {
+    float: right;
+  }
+}
